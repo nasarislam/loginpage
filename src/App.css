@@ -8,10 +8,10 @@ body{
   font-family: 'Poppins', sans-serif;
 
 }
-img{
+/* img{
   width: 10vw;
   background-blend-mode:multiply;
-}
+} */
 .App{
   background-image: url('Pink Red Modern Night City Desktop Wallpaper.png');
   background-repeat: no-repeat;
@@ -47,6 +47,8 @@ img{
 .login{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .child{
   width: 40vw;
@@ -78,48 +80,70 @@ form{
   background-color: #8b57f9;
   border-radius: 25px;
 }
+.inputfield{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 input{
-  height: 20px;
+  height: 30px;
   padding: 10px;
   padding-left: 18px;
-  width: 410px;
+  width: 370px;
   border-radius: 50px;
   font-size:small;
-  margin: 10px;
+  /* margin: 10px; */
   border: 1px solid #8b57f9;
   outline: none;
 }
-button{
-  margin-top: 5px;
-  width: 430px;
+.logbtn{
+  margin-top: 30px;
+  width: 390px;
   padding: 10px;
-  height: 40px;
+  height: 50px;
   border-radius: 50px;
   background-color: #8b57f9;
   color: white;
   letter-spacing: 5px;
   border: 1px solid gray;
+  cursor: pointer;
 }
 .foot{
   text-align: center;
-  margin: 10px;
+  /* margin: 10px; */
+  /* gap: 30px; */
   color: #8b57f9;
   font-size: medium;
+  cursor: pointer;
+  text-decoration: none;
 }
 .get{
   font-weight: bold;
   font-size: smaller;
+  color: rgb(97, 97, 255);
 }
 .terms{
   text-align: center;
   position: relative;
-  top: 65px;
+  top: 40px;
   font-size: small;
   color: #8b57f9;
+  cursor: pointer;
+  text-decoration: none;
 }
 @media screen and (max-width:1230px){
   .main{
     flex-direction: column;
+  }
+  .login{
+    gap: 10px;
+  }
+  .inputfield{
+    gap: 20px;
+  }
+  .logbtn{
+    margin-top: 20px;
   }
   .childimg{
     width: 150px;
@@ -132,21 +156,34 @@ button{
     font-size: small;
   }
   .terms{
-    top: 15px;
+    top: 6px;
+  }
+  .childimg{
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width:620px) {
   .login{
     width: 65vw;
   }
+  .childimg{
+    margin-bottom: 30px;
+  }
   .foot{
-    font-size: small;
+    font-size: 12px;
+  }
+  .terms{
+    font-size: 12px;
+    top: 20px;
   }
   input{
     width: 60vw;
+    height: 25px;
   }
-  button{
-    width: 65vw;
+  .logbtn{
+    width: 30vw;
+    height: 40px;
+    font-size: xx-small;
   }
 }
 .email{
@@ -159,9 +196,9 @@ button{
 }
 .mail, .pass
   {
-    font-size: larger;
+    font-size: x-large;
     color: #8b57f9;
-    right: 43px;
-    top: 21px;
+    right: 20px;
+    top: 12px;
     position: absolute;
 }
